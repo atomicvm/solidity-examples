@@ -38,7 +38,21 @@ module.exports = {
       chainId: 80001,
       gasMultiplier: 2,
       accounts: [`0x${process.env.PK}`],
-    }
+    },
+    shibuya: {
+      url: "https://rpc.shibuya.astar.network:8545",
+      accounts: [`0x${process.env.PK}`],
+      chainId: 81,
+      live: true,
+      tags: ["staging"],
+    },
+    shiden: {
+      url: `https://rpc.shiden.astar.network:8545`,
+      accounts: [`0x${process.env.PK}`],
+      chainId: 336,
+      live: true,
+      tags: ["staging"],
+    },
   }
 
 };
